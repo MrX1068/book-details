@@ -1,0 +1,153 @@
+.content {
+  position: relative;
+  height: 37vw;
+  margin-top: -40px;
+
+  &__background,
+  &__background__shadow,
+  &__background__image,
+  &__area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__background {
+    left: 0;
+    right: 0;
+
+    &__shadow {
+      left: 0;
+      background: #000;
+      width: 30%;
+      z-index: 2;
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        background-image: linear-gradient(to right,#000,transparent);
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 275px;
+      }
+    }
+
+    &__image {
+      right: 0;
+      width: 70%;
+      height: 100%;
+      background-position: center 10%;
+      background-size: cover;
+      z-index: 1;
+    }
+  }
+
+  &__area {
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 3;
+
+    &__container {
+      padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+      &__leftside{
+        width: 40%;
+        &__title {
+          font-size: 40px;
+          font-weight: 100;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.2;
+          letter-spacing: .6px;
+          color: #c3a572;
+          margin-bottom: 40px;
+          margin-top: 0;
+          max-width: 360px;
+          text-align: left;
+        }
+        &__image img {
+          width: 60px;
+          border-radius: 4px;
+          object-fit: cover;
+        }
+        &__button button {
+          margin-top: 30px;
+          background: #555454bf;
+          padding: 15px 50px;
+          border: none;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 5px;
+        }
+      }
+
+      &__rightside {
+        width: 60%;
+
+        &__author{
+          font-size: 18px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #fff;
+          margin-bottom: 2px;
+        } 
+
+        &__publisher {
+          font-size: 14px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.44;
+          letter-spacing: .43px;
+          color: hsla(0,0%,100%,.6);
+        }
+
+        &__description {
+          font-family: Helvetica Neue LT W05_45 Light;
+          font-size: 14px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.36;
+          letter-spacing: .4px;
+          color: hsla(0,0%,100%,.7);
+          margin-top: 30px;
+          word-break: break-word;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 18px;
+    color: #999;
+    margin-top: 20px;
+    max-width: 500px;
+  }
+
+  &__close {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}

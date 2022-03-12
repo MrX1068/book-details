@@ -1,0 +1,66 @@
+.item {
+  flex: 0 0 14.7%;
+  transition: transform 300ms ease 100ms;
+  margin: 0 7px;
+  position: relative;
+
+  img { 
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: top;
+  }
+  &_rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+
+    &_final {
+      width: 100px;
+      height: 25px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background: #003366;
+      opacity: 0.90;
+      font-size: 16px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: .2px;
+    }
+  }
+  &_details {
+    position: absolute;
+    bottom: 0;
+    background: #000000b5;
+    width: 91%;
+    padding: 10px;
+    color: white;
+    &_title {
+      font-size: 18px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: -.2px;
+      color: #fff;
+      max-width: 100%;
+      margin: 0 0 7px;
+    }
+    &_author, &_publisher {
+      font-size: 13px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: .4px;
+      color: hsla(0,0%,100%,.9);
+    }
+  }
+ 
+}

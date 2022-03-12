@@ -1,0 +1,9 @@
+.slider-wrapper {
+  padding: 40px 0;
+  overflow: hidden;
+  position: relative;
+  &:hover .slide-button {
+    opacity: 1;
+  }
+
+}
